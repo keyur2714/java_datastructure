@@ -1,0 +1,55 @@
+
+	
+	Classes and Objects
+	
+		Product
+			-- Attributes
+			- id
+			- description	
+			- unitPrice
+			- avlQty 
+		Access Specifiers
+		- private - 4 - only in same class
+		- public - 1 -- any where same package/ diff package classes
+		- default - 3 - same public but for same package
+		- protected - 2-- accessible in same package as well as in diff but in child class
+		
+		constructor - 
+			- same as class name
+			- it can be overloaded - multiple constructer
+			- generally used for initlize instance variable
+			- auutomatically called when object get created
+		by default default constuctor are there
+			but if you have any other constructor with more then 1 arg then you
+			need to manually define default constructor
+		
+		methods / function // method overloading
+		
+		int abs(int)
+		float abs(float)
+		int abs(long)
+		
+		void display(int i,int j);
+		void display();
+		void display(int no);
+		
+				
+	Object - instace of a class is called object
+		
+		instance variable - 
+	class A{
+		public int i,j;
+	}	
+	
+	A a=new A();   i and j are two instance variable
+		       a[i,j]
+	A b=new A();	
+		       b[i,j]      				
+
+	a.i=
+	
+	
+			
+
+		
+		
