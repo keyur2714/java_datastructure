@@ -1,12 +1,36 @@
 package com.webstack.driver;
 
 import com.webstack.bean.Items;
+import com.webstack.util.StringUtil;
 
 public class Driver {
+	
+	public void sayDone(){
+		System.out.println("Done...!");
+	}
+	
+	//Annonymous block called when object is got created.
+	{
+		System.out.println("when obkect is created...!");
+	}
+	
+	static {
+		System.out.println("Always First...!");		
+	}
+	
+	public Driver() {
+		System.out.println("From Default Constructor...!");
+	}
+	
+	public static void sayHello() {
+		System.out.println("Hello Radhe Krishna...!");
+	}
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
-		System.out.println("Hello Radhe Krishna..!");	
+		//	System.out.println("Hello Radhe Krishna..!");	
+		sayHello(); //Same class static method can be called without class name
 		
 		Items item1 = new Items(); // default constructor
 		item1.setId(1); //instace method
@@ -35,7 +59,22 @@ public class Driver {
 			item.display();
 		}
 		
-		System.out.println("Done...!");
+		System.out.println("Static Methods...");
+		String str = "keyur";
+		//Static method can be called without object
+		String revString = StringUtil.revStr(str);
+		System.out.println("Reverse String of "+str+" is : "+revString);
+		
+		int n=100;
+		StringUtil s[]=new StringUtil[n];
+		
+		for(int i=0;i<35;i++) {
+			s[i] = new StringUtil();
+		}
+		System.out.println("Total Object Created : "+StringUtil.cnt);
+		
+		//System.out.println("Done...!");
+		new Driver().sayDone();
 		
 	}
 

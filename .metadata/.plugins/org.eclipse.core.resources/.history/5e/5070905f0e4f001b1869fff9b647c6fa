@@ -1,0 +1,11 @@
+package com.webstack.util;
+
+public class StringUtil {
+	
+	public static Integer cnt = 0;
+
+	public static String revStr(String str) {
+		return new StringBuffer(str).reverse().toString();
+	}
+	
+}
