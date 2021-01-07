@@ -73,4 +73,6 @@ public class Items {
 	public void display() {
 		System.out.println(this.id+" "+this.barcode+" "+this.name+" "+this.description+" "+this.unitPrice+" "+this.quantity);
 	}
+	
+	
 }
