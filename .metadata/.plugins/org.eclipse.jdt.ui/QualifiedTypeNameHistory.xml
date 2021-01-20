@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.webstack.bean.Items"/>
+<fullyQualifiedTypeName name="com.webstack.util.StringUtil"/>
+<fullyQualifiedTypeName name="com.webstack.bean.Car"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.webstack.bean.Vehicle"/>
+<fullyQualifiedTypeName name="com.webstack.dto.PersonalComputer"/>
+<fullyQualifiedTypeName name="com.webstack.dto.Computer"/>
+<fullyQualifiedTypeName name="com.webstack.dto.SuperComputer"/>
+<fullyQualifiedTypeName name="com.webstack.dp.ComputerFactory"/>
+<fullyQualifiedTypeName name="com.webstack.bean.TestInterfaceImpl"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="com.webstack.bean.NewInterfaceFeature"/>
+<fullyQualifiedTypeName name="com.webstack.bean.TestInterface"/>
 </qualifiedTypeNameHistroy>
