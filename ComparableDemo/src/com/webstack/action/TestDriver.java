@@ -3,7 +3,11 @@ package com.webstack.action;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class TestDriver {
 
@@ -50,6 +54,10 @@ public class TestDriver {
 		
 		Collections.sort(customerList, customerComparator);
 		
+		Collections.sort(customerList, (o1,o2)->{
+			return o2.getCustomerId().compareTo(o1.getCustomerId());
+		});
+		
 		customerList.stream().forEach(System.out::println);
 		
 		System.out.println("Sorting on CustomerId on Desc Order: ");
@@ -61,6 +69,38 @@ public class TestDriver {
 		Collections.sort(customerList, customerComparator1);
 		
 		customerList.stream().forEach(System.out::println);
+		
+		System.out.println("Tree Set Demo");
+		
+		Set<Integer> rollNoSet = new LinkedHashSet<>();
+		
+		CustomerComparator customerComparator5 = new CustomerComparator();
+		customerComparator5.setSortFieldName("customerId");
+		customerComparator5.setSortOrder("asc");
+		
+		TreeSet<Customer> customerSet = new TreeSet<>(customerComparator5);
+		customerSet.add(customer1);
+		customerSet.add(customer2);
+		customerSet.add(customer3);
+		
+		Customer customer4 = new Customer(14,"vinit","vinit2cute@gmail.com","7387029111","surat");
+		
+		customerSet.add(customer4);
+		
+		Customer c = customerSet.higher(customer2);
+		
+		System.out.println(c);
+		
+		rollNoSet.add(22);
+		rollNoSet.add(27);
+		rollNoSet.add(26);
+		rollNoSet.add(44);
+		rollNoSet.add(32);
+		rollNoSet.add(44);
+		
+		rollNoSet.forEach(System.out::println);
+		
+		customerSet.forEach(System.out::println);
 		
 	}
 

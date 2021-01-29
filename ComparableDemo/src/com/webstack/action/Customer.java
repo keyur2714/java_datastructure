@@ -55,6 +55,26 @@ public class Customer implements Comparable<Customer> {
 		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", email=" + email
 				+ ", mobileNo=" + mobileNo + ", city=" + city + "]";
 	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((customerName == null) ? 0 : customerName.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {		
+		Customer other = (Customer) obj;
+		System.out.println(customerName+" "+other.customerName);
+		if (customerName == null) {
+			if (other.customerName != null)
+				return false;
+		} else if (!customerName.equals(other.customerName))
+			return false;
+		return true;
+	}
+	
+	
 	
 	
 	
