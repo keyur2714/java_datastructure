@@ -1,6 +1,5 @@
 
-	
-	
+		
 	Map<String,String> map = new HashMap<>();		
 			0,
 			1 - 65 , [A] , 123 , next - null 
