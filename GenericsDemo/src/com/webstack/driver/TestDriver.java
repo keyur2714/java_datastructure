@@ -1,5 +1,7 @@
 package com.webstack.driver;
 
+import java.util.List;
+
 import com.webstack.dto.EmployeeDTO;
 import com.webstack.service.IService;
 import com.webstack.service.impl.EmployeeServiceImpl;
@@ -12,8 +14,8 @@ public class TestDriver {
 		System.out.println("Hello Radhe Krishna...!");
 		
 		EmployeeDTO employee1 = new EmployeeDTO();
-		employee1.setEmployeeId(12345l);
-		employee1.setName("keyur");
+		employee1.setEmployeeId(24);
+		employee1.setName("darsh");
 		
 		/*IService employeeService = new EmployeeServiceImpl();
 		employeeService.save(employee1);
@@ -22,9 +24,14 @@ public class TestDriver {
 		IService<EmployeeDTO> employeeService = new EmployeeServiceImpl();
 		employeeService.save(employee1);
 		
-		EmployeeDTO emp = employeeService.get(32);
+		EmployeeDTO emp = employeeService.get(27);
 		
 		System.out.println(emp.getEmployeeId() +" "+emp.getName());
+		
+		List<EmployeeDTO> allEmployees = employeeService.list();
+		
+		allEmployees.forEach(e->System.out.println(e.getEmployeeId()+" "+e.getName()));
+		
 	}
 
 }

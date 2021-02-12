@@ -2,14 +2,14 @@ package com.webstack.dto;
 
 public class EmployeeDTO {
 
-	private long employeeId;
+	private int employeeId;
 	private String name;
 
-	public long getEmployeeId() {
+	public int getEmployeeId() {
 		return employeeId;
 	}
 
-	public void setEmployeeId(long employeeId) {
+	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
 
