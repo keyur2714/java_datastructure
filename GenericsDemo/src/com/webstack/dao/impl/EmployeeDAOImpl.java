@@ -82,4 +82,37 @@ public class EmployeeDAOImpl implements IDao<EmployeeDTO>{
 		return empList;
 	}
 
+	@Override
+	public int update(EmployeeDTO object) {
+		connection = DbUtil.getConnection();
+		String sql = "update employee_master set emp_name = ? where emp_id = ?";
+		int result = 0;
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.clearParameters();
+			preparedStatement.setString(1, object.getName());
+			preparedStatement.setInt(2, object.getEmployeeId());
+			result = preparedStatement.executeUpdate();
+			preparedStatement.close();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	@Override
+	public void delete(int id) {
+		connection = DbUtil.getConnection();
+		String sql = "delete from employee_master where emp_id = ?";
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.clearParameters();
+			preparedStatement.setInt(1, id);
+			preparedStatement.executeUpdate();
+			preparedStatement.close();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}		
+	}
+
 }

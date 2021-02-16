@@ -6,4 +6,6 @@ public interface IDao<T> {
 	void save(T object);
 	T get(int id);
 	List<T> list();
+	int update(T object);
+	void delete(int id);
 }

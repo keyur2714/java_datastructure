@@ -11,5 +11,7 @@ public interface IService<T> {
 	void save(T object);
 	T get(int id);
 	List<T> list();
+	int update(T Object);
+	void delete(int id);
 	
 }
