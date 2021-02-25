@@ -1,0 +1,60 @@
+1. Classes and Objects - 1 Hrs
+2. OOPS Concept in JAVA - 1
+	- abstractions
+	- encapsulation
+	- inhertance
+	- polymorphism
+3.Interface & Abstract classes - 1
+4.Exceptions and packages - 1
+5. Custom Annotations -1
+6. AutoboxingANDUnboxing - 30 Min
+7. Collection Framework - 3
+	- Set
+	- List
+   - Comparator
+   - Comparable
+   - How Hashmap Works		 
+8. Composition - 30 min
+9. File Handaling - 1.5 Hrs
+10. JDBC - 1 Hrs
+11. MultiThreading And Concurrencty - 2 Hrs
+12. Java - 8/11 Features - 3.5
+	- Lamda 
+	- Steams
+	- Functional Interface
+13. Java Reflection - 1 Hrs
+14. String Manupulation - 1Hrs
+15. Regular Expression - 1 Hrs
+
+-- 19 Hrs -  19 * 250 = 4750 / - 4500
+	
+
+1. Array - 30 Min
+2. Stack - 1 Hrs
+3. Queue - 1 Hrs
+4. Linked List - 1 Hrs
+5. Double Linked List - 1 Hrs
+6. Tree - 1.5Hrs
+7. Hash Tables - 1 Hrs
+8. Graph - 1 Hrs
+9. Searching Algorithms - 4 Hrs
+
+Sequential Search:
+	- Linear Searching
+Interval Search:
+	- Binary Searching
+- Interpolation Search
+	
+10. Sorting Algorithms - 6 Hrs
+
+- Selection Sorting
+- Bubble Sorting
+- Insertion Sorting
+- Merge Sorting
+- Quick Sorting
+- Shell Sorting
+- Heap Sorting
+
+Total - 18 Hrs * 300 = 5400/Rs
+
+Special Discount for you 1800*250 = 4500/-
