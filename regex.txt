@@ -1,0 +1,65 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+ 
+public class Main 
+{
+ public static void main(String[] args) 
+ {
+  Pattern pattern = Pattern.compile("Keyur|Denish");
+  Matcher matcher = pattern.matcher("Generally, Keyur and Denish share a great bonding.");
+   
+  while (matcher.find()) {
+            System.out.print("Start index: " + matcher.start());
+            System.out.print(" End index: " + matcher.end() + " ");
+            System.out.println(" - " + matcher.group());
+        }
+ }
+}
+
+
+
+For example, the regular expression “cat” finds ‘cat’ anywhere in the string, but “^cat” matches only if the ‘cat’ is at the beginning of the line. e.g. words like ‘category’ or ‘catalogue’.
+
+Similarly, “cat$” matches only if the ‘cat’ is at the end of the line. e.g. words like ‘scat’.
+
+
+
+For example, while “e” matches just an e, and “a” matches just an a, the regular expression [ea] matches either. 
+e.g. sep[ea]r[ea]te will match all the words “seperate” “separate” and “separete”.
+
+Another example can be to allow capitalization of a word’s first letter e.g. 
+[Ss]mith will allow the words smith and Smith both.
+
+
+
+
+A dash " - " indicates a range of characters. <[hH][1-6]> is similar to <[hH][123456]>. Other useful character ranges are [0-9] and [a-z] which match digits and English lowercase letters.
+
+We can specify multiple ranges in single construct e.g. [0123456789abcdefABCDEF] can be written as [0-9a-fA-F]. Note that order in which ranges are given doesn’t matter.
+
+
+
+If we use negation sign ( ^ ) in a character class then the class matches any character 
+that isn’t listed. e.g. [^1-6] matches a character that’s not 1 through 6.
+
+
+The metacharacter ' . ' is a shorthand for a character class that matches any character. Note that dots are not metacharacters when they are used within character classes. Within character class, it is a simple character only.
+
+For example, 06.24.2019 will match 06/24/2019 or 06-24-2019 or 06.24.2019. But
+06[.]24[.]2019 will match only 06.24.2019.
+
+
+
+Pipe symbol '|' allows you to combine multiple expressions into a single expression that matches any of the individual ones.
+
+For example, “Alex” and “Brian” are separate expressions, but "Alex|Brian" is one expression that matches either of both.
+
+
+^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$ -- Email
+
+
+
+
+
+
+
