@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.webstack.bean.Items"/>
-<fullyQualifiedTypeName name="com.webstack.util.StringUtil"/>
-<fullyQualifiedTypeName name="com.webstack.bean.Car"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="com.webstack.bean.Vehicle"/>
-<fullyQualifiedTypeName name="com.webstack.dto.PersonalComputer"/>
-<fullyQualifiedTypeName name="com.webstack.dto.Computer"/>
-<fullyQualifiedTypeName name="com.webstack.dto.SuperComputer"/>
 <fullyQualifiedTypeName name="com.webstack.dp.ComputerFactory"/>
 <fullyQualifiedTypeName name="com.webstack.bean.TestInterfaceImpl"/>
-<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 <fullyQualifiedTypeName name="com.webstack.bean.NewInterfaceFeature"/>
 <fullyQualifiedTypeName name="com.webstack.bean.TestInterface"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -58,4 +49,15 @@
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.webstack.util.TestAnnotationsImpl"/>
+<fullyQualifiedTypeName name="com.webstack.util.TestAnnotations"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Target"/>
+<fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
+<fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Documented"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.webstack.custom.MyAnnotations"/>
+<fullyQualifiedTypeName name="com.webstack.util.TestAnnotationsClass"/>
 </qualifiedTypeNameHistroy>
